@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>JS Technical Documentation</title>
+</head>
+<body>
+    <nav id="navbar" >
+        <header>JS Ducumentation</header>
+        
+          <a class = 'nav-link' href = "#Introduction">Introduction</a>
+          <a class = 'nav-link' href = "#JavaScript">JavaScript</a>
+          <a class = 'nav-link' href = "#Variable">Variable</a>
+          <a class = 'nav-link' href = "#Function">Function</a>
+          <a class = 'nav-link' href = "#Arrays">Arrays</a>
+        
+      </nav>
+      
+      
+      <main id='main-doc'>
+        <section class = 'main-section' id ='Introduction'>
+          <header>Introduction</header>
+          <p>Most programming is done with programming languages. A programming language is an artificially constructed language used to instruct computers. It is interesting that the most effective way we’ve found to communicate  with a computer borrows so heavily from the way we communicate with each other. Like human languages, computer languages allow words and phrases to be combined in new ways, making it possible to express ever new concepts</p>
+          <p>JavaScript is notorious for being the world's most misunderstood programming language. It is often derided as being a toy, but beneath its layer of deceptive simplicity, powerful language features await. JavaScript is now used by an incredible number of high-profile applications, showing that deeper knowledge of this technology is an important skill for any web or mobile developer.</p>
+        </section>
+        <section class = 'main-section' id='JavaScript'>
+          <header>JavaScript</header>
+          <p>JavaScript was introduced in 1995 as a way to add programs to web pages in the Netscape Navigator browser.The language has since been adopted by all other major graphical web browsers. It has made modern web applications possible—applications with which you can interact directly without doing a page reload for every action.JavaScript is also used in more traditional websites to provide various forms of interactivity and cleverness.</p>
+          <p>JavaScript is a multi-paradigm, dynamic language with types and operators, standard built-in objects, and methods. Its syntax is based on the Java and C languages — many structures from those languages apply to JavaScript as well. JavaScript supports object-oriented programming with object prototypes, instead of classes (see more about prototypical inheritance and ES2015 classes). JavaScript also supports functional programming — because they are objects, functions may be stored in variables and passed around like any other object.
+      
+      Let's start off by looking at the building blocks of any language: the types. JavaScript programs manipulate values, and those values all belong to a type. JavaScript's types are:</p>
+          <ul>
+            <li>Number</li>
+            <li>String</li>
+            <li>Boolean</li>
+            <li>Function</li>
+            <li>Object</li>
+            <li>Symbol</li>
+          </ul>
+         
+        </section>
+        <section class = 'main-section' id="Variable">
+          <header>Variable</header>
+          <p>Most of the time, a JavaScript application needs to work with information. 
+          Here are two examples:An online shop – the information might include goods being sold and a shopping cart. A chat application – the information might include users, messages, and much more.Variables are used to store this information. A variable is a “named storage” for data. We can use variables to store goodies, visitors, and other data.To create a variable in JavaScript, use the let keyword. The statement below creates (in other words: declares) a variable with the name “message”</p>
+          <code>
+            let a;
+            let name = 'message';
+          </code>
+          <p>New variables in JavaScript are declared using one of three keywords: let, const, or var.let allows you to declare block-level variables. The declared variable is available from the block it is enclosed in. const allows you to declare variables whose values are never intended to change. The variable is available from the block it is declared in. var is the most common declarative keyword. It does not have the restrictions that the other two keywords have. This is because it was traditionally the only way to declare a variable in JavaScript. A variable declared with the var keyword is available from the function it is declared in.</p>
+          
+        </section>
+        <section class = 'main-section' id ="Function">
+          <header>Function</header>
+          <p>Along with objects, functions are the core component in understanding JavaScript. The most basic function couldn't be much simpler:</p>
+          <code>
+            function add(x, y) {
+              var total = x + y;
+              return total;
+            }
+          </code>
+          <p>This demonstrates a basic function. A JavaScript function can take 0 or more named parameters. The function body can contain as many statements as you like and can declare its own variables which are local to that function. The return statement can be used to return a value at any time, terminating the function. If no return statement is used (or an empty return with no value), JavaScript returns undefined.
+      
+      The named parameters turn out to be more like guidelines than anything else. You can call a function without passing the parameters it expects, in which case they will be set to undefined.</p>
+          <code>
+            function avg(...args) {
+          var sum = 0;
+          for (let value of args) {
+          sum += value;
+          }
+          return sum / args.length;
+          }
+          </code>
+          
+        </section>
+        <section class = 'main-section' id ="Arrays">
+          <header>Arrays</header>
+          <p>Arrays in JavaScript are actually a special type of object. They work very much like regular objects (numerical properties can naturally be accessed only using [] syntax) but they have one magic property called 'length'. This is always one more than the highest index in the array.One way of creating arrays is as follows:</p>
+          <code>
+            var a = new Array();
+            a[0] = 'dog';
+            a[1] = 'cat';
+            a[2] = 'hen';
+            a.length; // 3
+          </code>
+          <p>A more convenient notation is to use an array literal:</p>
+          <code>var a = ['dog', 'cat', 'hen'];
+          a.length; // 3</code>
+          
+          
+        </section>
+        <section class="ref">
+          <p>
+            This page contain setences & code snippet is from Mozilla Developer Network  and JS info
+          </p>
+        </section>
+        
+        
+        
+      </main>
+</body>
+</html>
